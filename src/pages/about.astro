@@ -24,14 +24,14 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Background</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						My name is Christopher Debray, I have been working as a full-stack web developer for 2 year
+						I'm Christopher Debray, a self-driven web developer who embarked on this exciting journey during the COVID-19 pandemic in 2020.
 					</p>
 					<p>
-						
+						I began my formal education in web development at EPITECH in September 2020 and gained practical experience as an intern at Club Employés in September 2021.
 					</p>
 					<p>
-						
+						I proudly graduated as the valedictorian of my class in 2022 and continued my education at ESGI in 2023, still interning at Club Employés.
+						Now, I'm eager to pursue a Bac +5 degree at ESGI, and I'm actively seeking a new company to contribute my skills and passion for web development. Let's build the future together!
 					</p>
 				</div>
 			</section>
@@ -40,9 +40,35 @@ import Hero from '../components/Hero.astro';
 				<div class="content">
 					<p>
 						<ul>
-							<li>
-								
-							</li>
+							<li>EPITECH - BAC + 2 (Full-stack web developer, valedictorian)</li>
+							<ul>
+								<li>Project-based teaching</li>
+								<li>E-commerce project with Vue Js, Symfony and Docker</li>
+							</ul>
+							<li>ESGI - BAC + 3 (Full-stack web developer)</li>
+							<ul>
+								<li>Project-based teaching</li>
+							</ul>
+						</ul>
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Experiences</h2>
+				<div class="content">
+					<p>
+						<ul>
+							<li>Club Employés - 2 years</li>
+							<ul>
+								<li>Refonte du site en Symfony 4.4 monolithe, séparation du site en deux projets distincts :</li>
+								<ul>
+									<li>Une api en Symfony 6.1 avec utilisation d'API platform</li>
+									<li>Visuel du site en Vue js 3.2 avec utilisation de typescript</li>
+								</ul>
+								<li>Création d'un module de jeu concours permettant aux entreprises de créer des jeux modulables pour leurs employés.</li>
+								<li>Ajout d'un système de connexion SSO</li>
+								<li>Refonte et optimisation du système de chèque ANCV Formation d'une développeuse junior pendant un mois</li>
+							</ul>
 						</ul>
 					</p>
 				</div>
@@ -50,7 +76,14 @@ import Hero from '../components/Hero.astro';
 			<section>
 				<h2 class="section-title">Skills</h2>
 				<div class="content">
-					<p>officia unde omnis</p>
+					<ul>
+						<li>Symfony (2 years)</li>
+						<li>Vue Js (1 year)</li>
+						<li>Php (3 years)</li>
+						<li>Javascript (3 years)</li>
+						<li>Jquery (1 years)</li>
+						<li>MySQL (3 years)</li>
+					</ul>
 				</div>
 			</section>
 		</main>
@@ -77,6 +110,10 @@ import Hero from '../components/Hero.astro';
 		flex-direction: column;
 		gap: 0.5rem;
 		color: var(--gray-200);
+	}
+
+	section ul li {
+		line-height: 2.5;
 	}
 
 	.section-title {
