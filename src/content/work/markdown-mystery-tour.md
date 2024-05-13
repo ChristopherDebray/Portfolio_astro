@@ -1,19 +1,31 @@
 ---
-title: Markdown Mystery Tour
-publishDate: 2020-03-02 00:00:00
-img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+title: Project system manager
+publishDate: 2024-05-22 00:00:00
+img: /assets/works/task_management.png
+img_alt: Task management system
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  A task management system inspired by JIRA.
+  The focus here was to learn Laravel and to focus it's specificities and optmisiations.
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - Laravel
+  - Blade
+  - AlpineJS
+technos:
+  - Reverb
+  - Echo
+  - Breeze
+  - Phpstan / larastan
+  - Phpunit
+  - Tailwind
+  - Vite
+  - Docker
 ---
 
 ## Level-two heading
 
 > Tell me and I forget. Teach me and I remember. Involve me and I learn.
+
+> I wanted to learn laravel, and dig deeper into it.
 
 Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
 
@@ -29,7 +41,7 @@ Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pe
 
 Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
 
-#### Level-four heading
+#### Libraries / technologies used
 
 - We noted this
 - And also this other point

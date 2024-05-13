@@ -48,6 +48,10 @@ const { Content } = await entry.render();
 					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
 					<div class="content">
 						<Content />
+
+						<div class="tags">
+							{entry.data.technos.map((t) => <Pill size="small">{t}</Pill>)}
+						</div>
 					</div>
 				</div>
 			</main>

@@ -1,12 +1,13 @@
 ---
 interface Props {
 	href: string;
+	hasBorderOnly: boolean;
 }
 
-const { href } = Astro.props;
+const { href, hasBorderOnly = false } = Astro.props;
 ---
 
-<a href={href}><slot /></a>
+<a href={href} class={hasBorderOnly ? 'border-only' : ''}><slot /></a>
 
 <style>
 	a {
@@ -45,6 +46,14 @@ const { href } = Astro.props;
 	a:focus::after,
 	a:hover::after {
 		background-color: hsla(var(--gray-999-basis), 0.3);
+	}
+
+	.border-only::after {
+		width: 98%;
+    height: 90%;
+    background: black;
+    margin: auto;
+    border-radius: 9999px;
 	}
 
 	@media (min-width: 50em) {

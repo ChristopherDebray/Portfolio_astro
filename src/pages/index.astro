@@ -35,17 +35,15 @@ const projects = (await getCollection('work'))
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Developer full-stack</Pill>
 						<!-- <Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill> -->
 						<!-- <Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill> -->
 					</div>
 				</Hero>
 
 				<img
-					alt="Christopher Debray smiling in a red plaid shirt and tortoise shell glasses"
-					width="480"
-					height="620"
-					src="/assets/portrait.png"
+					alt="Christopher Debray avatar"
+					src="/assets/portrait.svg"
 				/>
 			</header>
 
@@ -97,11 +95,8 @@ const projects = (await getCollection('work'))
 	}
 
 	.hero img {
-		aspect-ratio: 5 / 4;
 		object-fit: cover;
 		object-position: top;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
 	}
 
 	@media (min-width: 50em) {
@@ -119,7 +114,6 @@ const projects = (await getCollection('work'))
 		}
 
 		.hero img {
-			aspect-ratio: 3 / 4;
 			border-radius: 4.5rem;
 			object-fit: cover;
 		}
