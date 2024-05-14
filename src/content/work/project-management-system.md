@@ -8,40 +8,42 @@ description: |
   The focus here was to learn Laravel and to focus it's specificities and optmisiations.
   (I used Laravel 10 at first and upgraed to 11 after it came out)
 tags:
-  - Laravel 11 & 10
+  - Laravel
   - Blade
   - AlpineJS
 technos:
   - Reverb
   - Echo
   - Breeze
-  - Phpstan / larastan
+  - Phpstan
   - Phpunit
   - Tailwind
   - Vite
   - Docker
+  - Laravel Blueprint
+  - GitlabCI
 ---
 
 ## Laravel the magic one.
 
 > I wanted to re focus on back-end frameworks and dig deeper into it.
 
-In my past experience, <a>I used Symfony</a>, another PHP framework. Initially, we worked with Symfony 4.4 on a monolithic project, utilizing JQuery, Bootstrap, and Webpack. Later, we embarked on a new project using Symfony 6.1, incorporating functional testing, API Platform, and more.
+In my past experience, I used <strong>Symfony</strong>, another PHP framework. Initially, we worked with Symfony 4.4 on a monolithic project, utilizing <strong>JQuery</strong>, <strong>Bootstrap</strong>, and <strong>Webpack</strong>. Later, we embarked on a new project using Symfony 6.1, incorporating functional testing with PHPUnit, usage of <strong>API Platform</strong>, and more.
 
-Althought it was very interesting, I was always curious avout Laravel.
-A friend of mine told me about it's "magic", the multliple commands that you are able to use allowing to create many classes, seeders and such, but also some very specific libraries such as Blueprint.
+Althought it was very interesting, I was always curious about <strong>Laravel</strong>.
+A friend of mine told me about it's "magic", the multiple commands that you are able to use allowing to create many classes, seeders and such, but also some very specific libraries such as Laravel Blueprint.
 
 ### Why this project ?
 
 I had spent a lot of time recently using front-end framework, first <strong>VueJS</strong> (at work but also on my free time), but also <strong>React</strong>.
-On react i learned a lot about <strong>Storybook, Emotion with styled component and component testing</strong>.
-It also allowed me to implement my first <strong>CI/CD (with gitlab CI)</strong> deployed on a digital ocean server with a linux environemt.
+On react i learned a lot about <strong>Storybook</strong>, <strong>Emotion</strong> with styled component and component testing (<strong>Jest</strong>).
+It also allowed me to implement my first CI/CD (with gitlab CI) deployed on a digital ocean server with a linux environemt.
 
 So my goal here was to refocus a bit on the back-end side, i had a lot of ideas, but a clone of JIRA allowed me to think of multiple aspects of a web project.
 
 ### What aspects of interest ?
 
-- <span class="title">Environment setup</span> : Not specific to this project, but i like to have a proper setup, with a good docker compose + image usable by anyone (also usefull for CI/CD), also a makefile to store the most frequently used scripts.
+- <span class="title">Environment setup</span> : Not specific to this project, but i like to have a proper setup, with a good docker image and docker compose usable by anyone (also usefull for <strong>CI/CD</strong>), also a <strong>makefile</strong> to store the most frequently used scripts.
 - <span class="title">Complex role management</span> : with roles varying on the organisation or project he is a part of (a user can be an editor inside a project while being only a viewer for a specific project etc).
 - <span class="title">Conceptual data model</span> : I needed to think my whole database carefully, with it's role complexity, it's relations (user can be linked to many tables) it could quickly become badly optimized.
 - <span class="title">Refactoring</span> : I do refacator at "Club employés" but here it was also about putting willingly some "plot holes" here and there, knowing I would have to refactor later, mixing the long term vision on some part (database with blueprint) and a shorter vision with refactoring. Adaptation and having a long term thinking being very important for a good developer.

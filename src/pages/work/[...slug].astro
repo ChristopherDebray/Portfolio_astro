@@ -49,7 +49,7 @@ const { Content } = await entry.render();
 					<div class="content">
 						<Content />
 
-						<div class="tags">
+						<div class="technos">
 							{entry.data.technos.map((t) => <Pill size="small">{t}</Pill>)}
 						</div>
 					</div>
@@ -92,6 +92,24 @@ const { Content } = await entry.render();
 	.content {
 		max-width: 65ch;
 		margin-inline: auto;
+	}
+
+	.technos {
+		display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+	}
+
+	@media (max-width: 45rem) {
+		.technos {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (max-width: 25rem) {
+		.technos {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	@media (max-width: 45rem) {
