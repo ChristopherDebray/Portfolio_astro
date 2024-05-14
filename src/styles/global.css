@@ -143,6 +143,10 @@ img {
 }
 
 a {
+	cursor: pointer;
+}
+
+a, strong, b {
 	color: var(--link-color);
 }
 

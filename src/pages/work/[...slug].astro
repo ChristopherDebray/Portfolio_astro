@@ -106,6 +106,16 @@ const { Content } = await entry.render();
 		margin: 1.5rem 0;
 	}
 
+	.content :global(ul), .content :global(ol) {
+		display: grid;
+		row-gap: 20px;
+	}
+
+	.content :global(li .title) {
+		text-decoration: underline;
+		text-underline-offset: 0.25em;
+	}
+
 	.content :global(img) {
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-sm);
@@ -125,16 +135,23 @@ const { Content } = await entry.render();
 
 	.back-link,
 	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
+		text-decoration: 1px solid underline;
 		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
 	}
 
-	.back-link:hover,
-	.back-link:focus,
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
+	.content :global(.inProgress::after) {
+		content: '';
+    display: inline-block;
+		width: 18px;
+    height: 18px;
+    margin-left: 8px;
+		background-image: url('/assets/hammer.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+	}
+
+	:root.theme-dark .content :global(.inProgress::after) {
+		background-image: url('/assets/hammer-dark.svg');
 	}
 
 	@media (min-width: 50em) {
