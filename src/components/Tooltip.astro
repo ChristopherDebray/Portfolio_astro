@@ -1,0 +1,11 @@
+---
+interface Props {
+	position: string;
+}
+
+const { position = 'top' } = Astro.props;
+const positionClass = 'tooltip--' + position;
+
+---
+
+<span class="tooltip {positionClass}"><slot /></span>

@@ -1,6 +1,7 @@
 ---
 title: Project management system
 publishDate: 2024-05-22 00:00:00
+status: in progress
 img: /assets/works/task_management.png
 img_alt: Task management system
 description: |
@@ -59,7 +60,7 @@ And of course, create tasks, with custom statuses, assignee and priority.
 - Configurate your organisation and project, with user invitations, custom task prefix, etc.
 - Advanced filtering for task listing.
 - Create your tasks with custom statuses.
-- <span class="inProgress">Create custom statuses.</span>
+- <span class="inProgress has-tooltip">Create custom statuses. <span class="tooltip">in progress</span> </span>
 ### Libraries / technologies used
 
 - We noted this
