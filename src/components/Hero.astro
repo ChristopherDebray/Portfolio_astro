@@ -7,17 +7,24 @@ interface Props {
 }
 
 const { align = 'center', tagline, title, status = 'Done' } = Astro.props;
+const statusIconClasses = {
+	'done': 'done',
+	'in progress': 'inProgress',
+};
+
+const statusIconClass = statusIconClasses[status];
 ---
 
 <div class:list={['hero stack gap-4', align]}>
 	<div class="stack gap-2">
 		<h1 class="title has-tooltip">
 			{title}
-			{status == 'in progress' && <span class="inProgress has-tooltip">
+			<span class={statusIconClass + ' hasAfterIcon has-tooltip'}>
 				<span class="tooltip">
 					{status}
 				</span>
-			</span>}
+			</span>
+
 		</h1>
 		{tagline && <p class="tagline">{tagline}</p>}
 	</div>

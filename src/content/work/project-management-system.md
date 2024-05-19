@@ -18,6 +18,7 @@ technos:
   - Breeze
   - Phpstan
   - Phpunit
+  - Pest
   - Tailwind
   - Vite
   - Docker
@@ -28,6 +29,8 @@ technos:
 ## Laravel the magic one.
 
 > I wanted to re focus on back-end frameworks and dig deeper into it.
+
+Before this project, I was working more on the front-end on my personal project, trying to learn <strong>React</strong> for my Pokedex project.
 
 In my past experience, I used <strong>Symfony</strong>, another PHP framework. Initially, we worked with Symfony 4.4 on a monolithic project, utilizing <strong>JQuery</strong>, <strong>Bootstrap</strong>, and <strong>Webpack</strong>. Later, we embarked on a new project using Symfony 6.1, incorporating functional testing with PHPUnit, usage of <strong>API Platform</strong>, and more.
 
@@ -59,9 +62,6 @@ And of course, create tasks, with custom statuses, assignee and priority.
 - Create and handle your organisation and projects.
 - Configurate your organisation and project, with user invitations, custom task prefix, etc.
 - Advanced filtering for task listing.
-- Create your tasks with custom statuses.
-- <span class="inProgress has-tooltip">Create custom statuses. <span class="tooltip">in progress</span> </span>
+- Create your tasks.
+- <span class="inProgress hasAfterIcon has-tooltip">Create custom statuses. <span class="tooltip">in progress</span> </span>
 ### Libraries / technologies used
-
-- We noted this
-- And also this other point
