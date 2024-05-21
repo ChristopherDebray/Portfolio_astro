@@ -7,6 +7,7 @@ img_alt: Trellow website
 description: |
   A NuxtJS app which goal was to emulate certain functionality of trello.
   My first project using NuxtJS
+link: https://trellow-board.vercel.app/
 tags:
   - NuxtJS
   - Tailwind

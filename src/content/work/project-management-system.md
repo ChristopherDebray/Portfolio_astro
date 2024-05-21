@@ -8,6 +8,7 @@ description: |
   A task management system inspired by JIRA.
   The focus here was to learn Laravel and to focus it's specificities and optmisiations.
   (I used Laravel 10 at first and upgraed to 11 after it came out)
+link: ''
 tags:
   - Laravel
   - Blade

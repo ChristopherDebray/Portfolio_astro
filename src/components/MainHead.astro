@@ -45,7 +45,6 @@ const {
 		}
 
 		const observer = new MutationObserver(() => {
-			console.log('POUET')
 			const isDark = document.documentElement.classList.contains('theme-dark');
 			localStorage.setItem('theme', isDark ? 'dark' : 'light');
 		});

@@ -7,6 +7,7 @@ img_alt: Pokedex website
 description: |
   A pokedex with React using PokeAPI.
   The focus here was to learn React and multiple front-end dependancies such has react hook form or Storybook.
+link: https://pokedex-react-wine-eight.vercel.app/
 tags:
   - React
 technos:

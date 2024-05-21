@@ -3,28 +3,45 @@ interface Props {
 	title: string;
 	tagline?: string;
 	align?: 'start' | 'center';
-	status: string;
+	status?: string;
+	link?: string;
 }
 
-const { align = 'center', tagline, title, status = 'Done' } = Astro.props;
+const { align = 'center', tagline, title, status, link } = Astro.props;
 const statusIconClasses = {
 	'done': 'done',
 	'in progress': 'inProgress',
 };
 
 const statusIconClass = statusIconClasses[status];
+let titleClass = 'title ';
+if (status) {
+	titleClass += 'has-tooltip';
+}
 ---
 
 <div class:list={['hero stack gap-4', align]}>
 	<div class="stack gap-2">
-		<h1 class="title has-tooltip">
-			{title}
-			<span class={statusIconClass + ' hasAfterIcon has-tooltip'}>
-				<span class="tooltip">
-					{status}
-				</span>
-			</span>
-
+		<h1 class={titleClass}>
+			{link ? (
+				<a href={link}>
+					{title}
+					<span class={statusIconClass + ' hasAfterIcon has-tooltip'}>
+						<span class="tooltip">
+							{status}
+						</span>
+					</span>
+				</a>
+			) : (
+				<>
+					{title}
+					<span class={statusIconClass + ' hasAfterIcon has-tooltip'}>
+						<span class="tooltip">
+							{status}
+						</span>
+					</span>
+				</>
+			)}
 		</h1>
 		{tagline && <p class="tagline">{tagline}</p>}
 	</div>
@@ -45,7 +62,11 @@ const statusIconClass = statusIconClasses[status];
 
 	.title {
 		font-size: var(--text-3xl);
-		color: var(--gray-0);
+		color: var(--gray-100);
+	}
+
+	.title a {
+		color: var(--gray-100);
 	}
 
 	@media (min-width: 50em) {
