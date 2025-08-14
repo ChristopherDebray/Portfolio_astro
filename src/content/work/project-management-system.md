@@ -65,4 +65,3 @@ And of course, create tasks, with custom statuses, assignee and priority.
 - Advanced filtering for task listing.
 - Create your tasks.
 - <span class="inProgress hasAfterIcon has-tooltip">Create custom statuses. <span class="tooltip">in progress</span> </span>
-### Libraries / technologies used
